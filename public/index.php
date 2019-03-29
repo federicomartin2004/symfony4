@@ -4,6 +4,8 @@ use App\Kernel;
 use Symfony\Component\Debug\Debug;
 use Symfony\Component\HttpFoundation\Request;
 
+setcookie("XDEBUG_SESSION", "xdebug-symfony4", time() + (86400 * 30), "/");
+
 require dirname(__DIR__).'/config/bootstrap.php';
 
 if ($_SERVER['APP_DEBUG']) {
